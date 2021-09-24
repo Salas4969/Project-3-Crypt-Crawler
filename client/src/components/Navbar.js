@@ -22,7 +22,7 @@ const AppNavbar = () => {
             <Nav className='ml-auto'>
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to='/saved'>
+                  <Nav.Link as={Link} to='/characters'>
                     See your characters
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
