@@ -31,9 +31,11 @@ const typeDefs = gql`
   }
 
     type Mutation {
-    addCharacter(name: String!): Auth
+    addCharacter(name: String!, id:ID): Auth
     addWeapons(name: String!)
     addEnemy(name: String!)
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
 
   }
 `;
