@@ -13,6 +13,11 @@ const typeDefs = gql`
 
   type Weapons {
     name: String
+    option: {
+      sword
+      spear
+      shield
+    }
   }
 
   type Enemy {
@@ -23,6 +28,13 @@ const typeDefs = gql`
   type Auth {
     token: ID!
     user: User
+  }
+
+    type Mutation {
+    addCharacter(name: String!): Auth
+    addWeapons(name: String!)
+    addEnemy(name: String!)
+
   }
 `;
 
